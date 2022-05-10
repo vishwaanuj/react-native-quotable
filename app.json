@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "quotes",
+    "slug": "quotes",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
