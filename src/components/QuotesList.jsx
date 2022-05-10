@@ -27,9 +27,6 @@ const QuoteList=styled.View`
                 padding:10px;
                 `
 
-
-const QuoteListtext=styled.Text`
-                    `
 const QuotesList = ({tag}) => {
 
   const [quotes,SetQuotes]=useState([{}]);
@@ -45,17 +42,17 @@ const QuotesList = ({tag}) => {
     data={quotes}
     renderItem={({item}) => (
 
-<MotiView   from={{scale:0}} animate={{scale:1}}
-            transition={{
+     <MotiView   from={{scale:0}} animate={{scale:1}}
+                  transition={{
                     scale: {
                       type: 'spring',
                       delay: 200,
                     },
                     }}>
-                <QuoteList style={{fontFamily:}}>
-                        <QuoteTextList>{item.content+"~"+item.author}</QuoteTextList>
+                <QuoteList >
+                        <Text>{item.content+"~"+item.author}</Text>
                 </QuoteList>
-</MotiView>
+     </MotiView>
 
   )}
   keyExtractor={(item) => item._id}
